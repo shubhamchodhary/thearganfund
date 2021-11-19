@@ -126,6 +126,9 @@ a button {
     padding: 1rem;
     align-items: center;
   }
+  .logo {
+    margin-bottom: 2rem;
+  }
   .hero-right {
     width: auto;
     padding: 1rem;
