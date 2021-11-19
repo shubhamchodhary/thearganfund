@@ -1,14 +1,15 @@
 * {
   padding: 0;
   margin: 0;
+  background-color: #f2f2f2;
 }
 
 body {
   padding: 0;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
-  background-image: url("./argan-hero.png");
-  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
 }
 h1 {
   font-size: 60px;
@@ -33,25 +34,46 @@ p {
 
 main {
   display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
   display: flex;
   text-align: start;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.hero-right {
+  display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-cover {
+  width: 600px;
 }
 
 .mark {
@@ -75,4 +97,38 @@ button {
 
 a button {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    width: auto;
+    overflow-x: hidden;
+  }
+  .hero {
+    padding: 0;
+    flex-direction: column-reverse;
+    margin-top: 1.5rem;
+    margin-bottom: auto;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  .hero-cover {
+    width: 300px;
+  }
+  .hero-left {
+    width: auto;
+    padding: 1rem;
+    align-items: center;
+  }
+  .hero-right {
+    width: auto;
+    padding: 1rem;
+    align-items: flex-start;
+  }
 }
