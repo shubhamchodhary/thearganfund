@@ -41,35 +41,31 @@ main {
 
 .hero {
   display: flex;
-  text-align: start;
+  text-align: center;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  margin-top: 1.5rem;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 .hero-right {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 2rem;
-  margin-top: 2rem;
-}
-
-.hero-left {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
   margin-top: 2rem;
+  border: 2px solid #d5f4d2;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #d5f4d2;
+  -moz-box-shadow: 10px 10px 5px #8edfbe;
+  -webkit-box-shadow: 10px 10px 5px #8edfbe;
+  -khtml-box-shadow: 10px 10px 5px #8edfbe;
 }
 
 .hero-cover {
